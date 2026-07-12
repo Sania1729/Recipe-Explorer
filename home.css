@@ -1,0 +1,188 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fff7ed;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+height:90px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 70px;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+font-size:25px;
+font-weight:700;
+color:#ff5722;
+}
+
+.logo img{
+width:65px;
+height:65px;
+border-radius:15px;
+}
+
+.nav-buttons button{
+padding:12px 30px;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+
+.login-btn{
+background:white;
+border:2px solid #ff5722;
+color:#ff5722;
+margin-right:15px;
+}
+
+.register-btn{
+background:#ff5722;
+border:none;
+color:white;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:70px 100px;
+gap:50px;
+}
+
+.hero-content{
+width:50%;
+}
+
+.hero-content h1{
+font-size:48px;
+line-height:1.3;
+color:#222;
+}
+
+.hero-content p{
+font-size:18px;
+margin:25px 0;
+color:#666;
+}
+
+.buttons button{
+padding:15px 35px;
+border-radius:30px;
+border:none;
+background:#ff5722;
+color:white;
+font-size:17px;
+cursor:pointer;
+}
+
+.buttons .outline{
+background:white;
+color:#ff5722;
+border:2px solid #ff5722;
+margin-left:15px;
+}
+
+.hero-image{
+width:50%;
+}
+
+.hero-image img{
+width:100%;
+height:455px;
+object-fit:cover;
+/* border-radius:40px;
+box-shadow:
+0 20px 40px rgba(0,0,0,.2); */
+}
+
+/* POPULAR RECIPES */
+.popular{
+padding:40px 100px;
+text-align:center;
+}
+
+.popular h2{
+font-size:35px;
+margin-bottom:30px;
+}
+
+.recipe-preview{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.preview-card{
+background:white;
+width:280px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.preview-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.preview-card h3{
+padding:15px;
+}
+
+/* FEATURES */
+
+.features{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:50px;
+}
+
+.features div{
+background:white;
+padding:30px;
+width:300px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.features h3{
+color:#ff5722;
+margin-bottom:15px;
+}
+
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+padding:40px;
+}
+
+.hero-content,.hero-image{
+width:100%;
+}
+
+.recipe-preview,.features{
+flex-direction:column;
+align-items:center;
+}
+}

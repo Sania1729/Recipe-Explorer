@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Recipe Finder</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="mainhead">
+            <div class="logo">
+                <img src="./assests/logo.png">
+            </div>
+            <div class="countries">
+                <select id="country">
+                    <option value="all">
+                        All Countries
+                    </option>
+                </select>
+            </div>
+            <div class="categories">
+                <select id="category">
+                    <option value="all">
+                        All Categories
+                    </option>
+                    <option value="Seafood">
+                        Seafood
+                    </option>
+                    <option value="Vegetarian">
+                        Vegetarian
+                    </option>
+                    <option value="Beef">
+                        Beef
+                    </option>
+                </select>
+            </div>
+            <div class="search">
+                <input id="search" placeholder="Search food">
+                <button id="searchBtn" style="border: none;">
+                    🔍
+                </button>
+            </div>
+            <div class="login">
+                <p id="usernameDisplay"></p>
+                <button id="logout">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="container"></div>
+    <script src="./js/auth.js"></script>
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
