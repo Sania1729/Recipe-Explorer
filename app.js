@@ -111,5 +111,5 @@ document.getElementById("searchBtn").addEventListener("click", () => {
 // ===============================
 window.viewRecipe = function (id) {
   localStorage.setItem("recipeId", id);
-  window.location.href = "./recipe-details.html";
+  window.location.href = "recipe-details.html";
 };
