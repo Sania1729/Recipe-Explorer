@@ -15,7 +15,7 @@ if (loginForm) {
     ) {
       localStorage.setItem("loggedIn", "true");
       localStorage.setItem("username", username);
-     window.location.href = "home.html";
+     window.location.href = "explorer.html";
     } else {
       alert("Invalid username or password");
     }
@@ -39,6 +39,6 @@ if (logout) {
   logout.addEventListener("click", () => {
     localStorage.removeItem("loggedIn");
     localStorage.removeItem("username");
-    window.location.href = "home.html";
+    window.location.href = "index.html";
   });
 }
